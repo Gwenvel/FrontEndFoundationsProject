@@ -1,0 +1,57 @@
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FrontEndFoundation App</title>
+    <link href="/libs/bootstrap.min.css" rel="stylesheet" />
+    <link href="/libs/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <base href="/" />
+</head>
+<body>
+    <div class="container">
+
+        <h1>Lop Nissan Automotive Dealership</h1>
+        <nav class="navbar navbar-inverse bg-inverse">
+            <a class="nav-link" ui-sref="home">Home</a>
+            <a class="nav-link" ui-sref="about">Inventory</a>
+            <a class="nav-link" ui-sref="inventory">About</a>
+            <a class="nav-link" ui-sref="contact">Contact Us</a>   
+        </nav>
+        <iframe loop height = "auto" width="100%"
+        src="https://www.youtube.com/embed/ff-2XCdy93A?autoplay=1&loop=1">
+        </iframe>
+        <ui-view></ui-view>
+
+    </div>
+    <footer>
+        <p>We are located at <address>5864 N 596th Lane, Phoenix, AZ 85694</address></p>
+        <p>Contact us at: </p>
+        <ul>
+            <li>Phone: 658-596-3215</li>
+            <li>Email: niyshd@jsnh.com</li>
+        </ul>
+    </footer>
+
+    <!-- Library Files -->
+    <script src="/libs/angular.min.js"></script>
+    <script src="/libs/angular-resource.min.js"></script>
+    <script src="/libs/angular-animate.min.js"></script>
+    <script src="/libs/angular-touch.min.js"></script>
+    <script src="/libs/ui-bootstrap-tpls.min.js"></script>
+    <script src="/libs/angular-ui-router.min.js"></script>
+
+    <!-- controllers -->
+    <script src="/ngApp/controllers/mainController.js"></script>
+    <script src="/ngApp/controllers/aboutController.js"></script>
+    <script src="/ngApp/controllers/inventoryController.js"></script>
+    <script src="/ngApp/controllers/contactController.js"></script>
+    
+    <!-- services -->
+    <script src="/ngApp/services/productService.js"></script>
+
+    <script src="/ngApp/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+footer{
+    background-color: gray;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+}
+.nav-link:hover{
+    background-color: black;
+    color: white;
+}
+.listing{
+   list-style: none;
+}
+html{
+    background-color: #BCB7B7;
+}
+.nav-link{
+    display: inline-block;
+    padding: 15px;
+}
+form{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,23 @@
+<h2>Inventory</h2>
+
+<!-- <p>{{ controller.message }}</p> -->
+
+<input type="text" placeholder="search for Model..." id="search" ng-keyup="controller.getSearch()">
+
+<table id = "carTable" class = "table">
+    <tr>
+        <th>MAKE</th>
+        <th>MODEL</th>
+        <th>COLOR</th>
+        <th>YEAR</th>
+        <th>PRICE</th>
+    </tr>
+    <tr ng-repeat="car in controller.cars">
+            <td>{{car.Make}}</td>
+            <td>{{car.Model}}</td>
+            <td>{{car.Color}}</td>
+            <td>{{car.Year}}</td>
+            <td>{{car.Price | currency}}</td>
+    </tr>
+</table>
+<p>{{controller.Error}}</p>
